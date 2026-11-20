@@ -37,7 +37,7 @@ logger = logging.getLogger("file")
 
 WD = Path(__file__).resolve().parents[1]  # the repo root (was: stale tool-workspace copy)
 PKG = WD / "packaging"
-REPO_NAME = "subset-sum-half"
+REPO_NAME = "subset-sum"
 GH_OWNER = "darkhipo"
 REGISTER_ID = "2125607414"
 BOUND = "1/2"

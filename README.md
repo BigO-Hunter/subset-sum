@@ -1,4 +1,4 @@
-# subset-sum-half
+# subset-sum
 
 Lean 4 formalization of Subset Sum at α = 1/2: deterministic meet-in-the-middle, flat O(2^(n/2)).
 Construction: ours (Horowitz–Sahni style MITM as a single finite word-RAM program). AI-assisted (darkhipo swarm), disclosed.
@@ -18,4 +18,11 @@ Reproducible verified bounds: a kernel-checked Race.bound : SolvedInTime (1/2) �
 
 ## License
 
-Licensed under the Copy-Free/Stays-Free (CFSF) License — see [LICENSE](LICENSE). CFSF: copy-free (use for any purpose) and stays-free (nobody may fence this work). The name is unclaimed in software licensing (checked 2026-11-09) and is deliberately not "Copyfree" — the Copyfree Initiative's certification mark — since CFSF's anti-enclosure condition is excluded by their standard. 
+Licensed under the Copy-Free/Stays-Free (CFSF) License — see [LICENSE](LICENSE). CFSF: copy-free (use for any purpose) and stays-free (nobody may fence this work). The name is unclaimed in software licensing (checked 2026-11-09) and is deliberately not "Copyfree" — the Copyfree Initiative's certification mark — since CFSF's anti-enclosure condition is excluded by their standard.
+
+## Umbrella layout
+
+- Repository root: the deterministic α = 1/2 submission described above.
+- `mitm/`: the complete original `subset-sum-mitm` package at source commit `1b502826f167b25aa20211b89a9b22387b8bad2f`, merged with full history, including its separate 301-instruction finite program and verification material.
+
+These are related but distinct artifacts, not duplicate submissions. Build and audit each package from its own directory. The umbrella filing name is `subset-sum`.
