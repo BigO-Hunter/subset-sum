@@ -27,4 +27,21 @@ Licensed under the Copy-Free/Stays-Free (CFSF) License — see [LICENSE](LICENSE
 - `subset-sum-mitm` v2 branches: preserved as archive refs `archive/subset-sum-mitm/v2-alpha-half` and `archive/subset-sum-mitm/v2-budget` (verbatim source tips `dcfe97466bbd` / `daf5374ed3b0` plus annotation-tidied tips) — experimental discharge/budget work, not a separate filing.
 - `hs74-historical/`: the former `subsetsum-lean` repo at source commit `e2bd7c3772b48dd5da2ee529a708d9d28dd03412`, merged with full history — the first Lean-verified subset-sum result (Horowitz–Sahni 1974 MITM: exact decision correctness `mitm_correct` + analytic `O(2^(n/2)·poly(n))` cost `mitm_time_bound`). Historical decision-correctness reference on an older pin (Lean 4.33.1 / Mathlib 0df444a); nothing imports it and it is not a current submission.
 
+## Reproduction
+
+Each package builds from its own directory with its own pins:
+
+```sh
+# root: the deterministic alpha=1/2 filing (Lean 4.34.1, verifier Mathlib pin)
+lake exe cache get && lake build Submission
+
+# mitm/: the 301-instruction MITM package (no Mathlib dependency)
+cd mitm && lake build Submission
+
+# hs74-historical/: HS74 decision-correctness reference (Lean 4.33.1 / Mathlib 0df444a)
+cd hs74-historical && lake exe cache get && lake build
+```
+
+`scratch/` holds campaign scratch material (probes, dumps, output logs) moved off the root; it is not part of any filed proof.
+
 These are related but distinct artifacts, not duplicate submissions. Build and audit each package from its own directory (each keeps its own toolchain pins). The umbrella filing name is `subset-sum`.
