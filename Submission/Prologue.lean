@@ -3,7 +3,7 @@ import Submission.Words
 set_option autoImplicit true
 
 /-!
-# The exec calculus + relocation prologue (R2125607414)
+# The exec calculus + relocation prologue
 
 ## Layer 0: the canonical memory form
 
@@ -768,7 +768,7 @@ theorem pro_segF (x : Instance n) (ρ : Nat → BitVec w) (hn : 4 ≤ n)
 /-! ### The saveAk chain: a₄..a₂₂ to scratch (pcs 13-50) -/
 
 
-/-! ### saveAks rounds, abstracted (R2125607414 build-unblock) -/
+/-! ### saveAks rounds, abstracted (build-unblock) -/
 
 /-- One relocation pair of the sweep (for `m = 2..20`, pcs `2m+9`/`2m+10`):
 bump the cursor in cell 0, then store cell `m+2` to `mem[2n+m+1]`.  Stated
@@ -840,7 +840,7 @@ theorem saveAks_pair (x : Instance n) (ρ : Nat → BitVec w) (hn : 4 ≤ n)
 /-- The 19-round relocation sweep (pcs 13-50) via `saveAks_pair` chains:
 every intermediate state stays abstract, so no nested `up` term is ever
 written.  Replaces the inlined 388-line proof whose nested-state `have`s
-exploded elaboration to ~137 GB (R2125607414 build unblock). -/
+exploded elaboration to ~137 GB (build unblock). -/
 theorem pro_saveAks (x : Instance n) (ρ : Nat → BitVec w) (hn : 4 ≤ n)
     (hpow : 2 ^ (2 * n) ≤ 2 ^ w) (hif : ∀ q, inF x q < 2 ^ w)
     (f : Nat → Nat) (r S : Nat) (hS : 38 ≤ S)

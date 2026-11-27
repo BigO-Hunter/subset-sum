@@ -2,7 +2,7 @@ import Submission.Fit
 set_option autoImplicit true
 
 /-!
-# Runtime bound (R2125607414)
+# Runtime bound
 
 ## Part 1: polynomial-vs-exponential, from first principles
 

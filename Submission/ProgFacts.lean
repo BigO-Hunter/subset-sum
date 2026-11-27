@@ -2,7 +2,7 @@ import Submission.Det
 set_option autoImplicit true
 
 /-!
-# Concrete facts about `prog` (R2125607414)
+# Concrete facts about `prog`
 
 `prog` is a closed list; no-`rand` is checkable by evaluation.
 -/

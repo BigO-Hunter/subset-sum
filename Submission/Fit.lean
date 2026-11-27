@@ -2,7 +2,7 @@ import Submission.Bridge
 set_option autoImplicit true
 
 /-!
-# Word-length fit: `2·Σa < 2^w` (R2125607414)
+# Word-length fit: `2·Σa < 2^w`
 
 The wrapped-complement safety argument: every value the program handles is
 at most `Σa`, while a wrapped complement `t − s (mod 2^w)` with `s > t` is

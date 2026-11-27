@@ -2,7 +2,7 @@ import Submission.Fit
 set_option autoImplicit true
 
 /-!
-# The BitVec↔Nat vocabulary (R2125607414)
+# The BitVec↔Nat vocabulary
 
 The program computes in `BitVec w`; the spec computes in `Nat`.  Every
 value the program ever holds fits below `2^w` (Fit), so each word

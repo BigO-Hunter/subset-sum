@@ -2,7 +2,7 @@ import Submission.SubsetSumStatement
 set_option autoImplicit true
 
 /-!
-# The mathematical core: MITM correctness (R2125607414, spec layer)
+# The mathematical core: MITM correctness (spec layer)
 
 Program-independent theorems.  `isSum a n t` says: some subset of the first
 `n` values of `a` (as a Boolean choice, eventually false) sums to `t`.

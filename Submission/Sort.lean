@@ -2,7 +2,7 @@ import Submission.Spec
 set_option autoImplicit true
 
 /-!
-# Spec-level sort layer (R2125607414)
+# Spec-level sort layer
 
 `halfSums a k` is EXACTLY the array Phase A builds: the sorted list of all
 subset sums of `a 0..k-1`, grown by doubling merges — round `k` merges the

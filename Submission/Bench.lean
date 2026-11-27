@@ -2,7 +2,7 @@ import Submission.Program
 set_option autoImplicit true
 
 /-!
-# Test bench (R2125607414): run the emitted program on concrete instances.
+# Test bench: run the emitted program on concrete instances.
 
 `execMem` mirrors the statement's `exec` case-for-case but threads the final
 memory out — TEST-ONLY diagnostics; the statement's `exec` stays the

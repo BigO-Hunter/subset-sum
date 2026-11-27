@@ -2,7 +2,7 @@ import Submission.Spec
 set_option autoImplicit true
 
 /-!
-# The bridge: statement shape ↔ spec shape (R2125607414)
+# The bridge: statement shape ↔ spec shape
 
 `Instance.yes` speaks `Fin n → Bool` + `List.ofFn` sums; `Spec.isSum`
 speaks `Nat → Bool` + `List.range` sums.  One reshaping lemma connects
