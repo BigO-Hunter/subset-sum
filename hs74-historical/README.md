@@ -6,6 +6,12 @@ word-RAM cost bound. Prepared for submission to
 [bigospeedrun/verifier](https://bigospeedrun.com/subset-sum) as the first
 Lean-verified Subset Sum result.
 
+> **Historical reference package** (`hs74-historical/`) in the `subset-sum` umbrella —
+> folded from the former `subsetsum-lean` repo (source commit `e2bd7c3772b4`) with full
+> history. The first Lean-verified subset-sum result, kept as the decision-correctness
+> reference. Older toolchain pin (Lean 4.33.1 / Mathlib 0df444a) than the umbrella's filed
+> packages; build/audit it from this directory, not as a current submission.
+
 ## Problem
 
 Given positive integers a₁,…,aₙ and a nonnegative target t, decide whether a
@@ -71,7 +77,7 @@ Reproducible verified results: the first Lean-verified subset-sum result (exact 
 
 ## What work can be done here
 
-Complete as the decision-correctness + cost reference. Open work: maintenance and reruns; newer bounds live in subset-sum-half / subset-sum-mitm.
+Complete as the decision-correctness + cost reference. Open work: maintenance and reruns; newer bounds live in the umbrella root (the α=1/2 submission) and `mitm/` (the 301-instruction package).
 
 ## License
 

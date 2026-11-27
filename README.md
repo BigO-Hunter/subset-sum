@@ -24,5 +24,6 @@ Licensed under the Copy-Free/Stays-Free (CFSF) License — see [LICENSE](LICENSE
 
 - Repository root: the deterministic α = 1/2 submission described above.
 - `mitm/`: the complete original `subset-sum-mitm` package at source commit `1b502826f167b25aa20211b89a9b22387b8bad2f`, merged with full history, including its separate 301-instruction finite program and verification material.
+- `hs74-historical/`: the former `subsetsum-lean` repo at source commit `e2bd7c3772b48dd5da2ee529a708d9d28dd03412`, merged with full history — the first Lean-verified subset-sum result (Horowitz–Sahni 1974 MITM: exact decision correctness `mitm_correct` + analytic `O(2^(n/2)·poly(n))` cost `mitm_time_bound`). Historical decision-correctness reference on an older pin (Lean 4.33.1 / Mathlib 0df444a); nothing imports it and it is not a current submission.
 
-These are related but distinct artifacts, not duplicate submissions. Build and audit each package from its own directory. The umbrella filing name is `subset-sum`.
+These are related but distinct artifacts, not duplicate submissions. Build and audit each package from its own directory (each keeps its own toolchain pins). The umbrella filing name is `subset-sum`.
