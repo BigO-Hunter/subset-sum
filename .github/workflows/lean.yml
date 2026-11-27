@@ -1,0 +1,31 @@
+name: Lean proof
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build Submission (alpha = 1/2)
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    env:
+      LEAN_NUM_THREADS: 2
+    steps:
+      - name: Check out the proof
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      # Root package only: mitm/ and hs74-historical/ are separate packages with
+      # their own pins; packaging/ is stale. The root has no Mathlib dependency
+      # (core Lean suffices), so there is no cache executable to fetch.
+      - name: Install Lean and build the submission
+        uses: leanprover/lean-action@24581d74d674803a25a81b10b059c5c0cdd344c6 # v1
+        with:
+          lake-package-directory: .
+          build: "true"
+          test: "false"
+          lint: "false"
+          use-mathlib-cache: "false"
