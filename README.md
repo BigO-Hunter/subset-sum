@@ -5,11 +5,13 @@ Construction: ours (Horowitz–Sahni style MITM as a single finite word-RAM prog
 Board: BigO Speedrun, subset-sum.
 Status: kernel-verified `Race.bound : SolvedInTime (1/2)` — Lean 4.34.1, zero sorry.
 
+> Board (Nov 26 2026): this repo verifies α = 1/2; the open race is currently led by OpenAI + 2 more at O(2^{0.49995n}) (Nov 26, Lean Verified) — see [bigospeedrun.com](https://bigospeedrun.com).
+
 ---
 
 ## What work can be done here
 
-`Race.bound : SolvedInTime (1/2)` is kernel-verified. Open work: independent reruns; pushing below α = 1/2 (see subset-sum-l25 and the campaign lanes).
+`Race.bound : SolvedInTime (1/2)` is kernel-verified. Open work: independent reruns; pushing below α = 1/2 (see [subset-sum-l25](https://github.com/BigO-Hunter/subset-sum-l25)).
 
 ## License
 
@@ -37,7 +39,7 @@ cd mitm && lake build Submission
 cd hs74-historical && lake exe cache get && lake build
 ```
 
-`scratch/` — campaign scratch material (probes, dumps, output logs), outside the filed proofs.
+`scratch/` — scratch material (probes, dumps, output logs), outside the filed proofs.
 
 Build and audit each package from its own directory (each keeps its own toolchain pins).
 
