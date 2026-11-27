@@ -1,6 +1,6 @@
 # Wave 5b — §C3 WIP: bign_run2_from148 (~90% drafted, 6 localized errors left)
 
-WIP file: /private/tmp/opencode/RaceV2.wip-c3.lean (copy over
+WIP file: local scratch RaceV2.wip-c3.lean (copy over
 Submission/RaceV2.lean to resume). The committed branch state (791985a)
 is GREEN; the WIP adds only `bign_run2_from148` (~150 lines at file end,
 after §C2 helpers). All ingredients are committed and green.
@@ -98,7 +98,7 @@ parse error), for the decide-shaped summit statement (Race.lean idiom).
 
 ## UPDATE (post-first-fix-pass — read this too)
 
-The WIP at /private/tmp/opencode/RaceV2.wip-c3.lean has had a fix-pass
+The WIP at local scratch RaceV2.wip-c3.lean has had a fix-pass
 applied but introduced TWO duplications (fix in this order):
 1. arrL_length/arrL_val are now declared TWICE (my fix-pass added fresh
    copies before the §C2 docstring while the WIP already carried older

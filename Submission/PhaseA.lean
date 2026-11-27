@@ -4,7 +4,7 @@ import Submission.Fit
 set_option autoImplicit true
 
 /-!
-# Phase A: the doubling-merge mountain (R2125607414)
+# Phase A: the doubling-merge mountain
 
 At `LROUND` (pc 98) of round `k`, the source array at `[rSRC]` (cells
 `[rSRC .. +2^(k-1))`) is exactly `halfSums (instA x) (k-1)` (Sort.lean's

@@ -2,7 +2,7 @@ import Submission.SubsetSumStatement
 set_option autoImplicit true
 
 /-!
-# The MITM program, part 1: assembly DSL + relocation bootstrap (R2125607414)
+# The MITM program, part 1: assembly DSL + relocation bootstrap
 
 ## The relocation kernel — SOLVED (zero irreversible sacrifice, uniform in n)
 

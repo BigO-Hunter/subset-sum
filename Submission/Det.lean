@@ -2,7 +2,7 @@ import Submission.Program
 set_option autoImplicit true
 
 /-!
-# Determinism and the `Correct` collapse (R2125607414)
+# Determinism and the `Correct` collapse
 
 The program never executes `rand`, so every tape yields the same verdict.
 Then `Correct`'s two-thirds probability condition holds at 100%: if every

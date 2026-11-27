@@ -3,7 +3,7 @@ import Submission.Det
 set_option autoImplicit true
 
 /-!
-# The bench mirror IS the statement's `exec` (R2125607414)
+# The bench mirror IS the statement's `exec`
 
 `execMem` (Bench.lean) mirrors `exec` case-for-case but threads the final
 memory out for diagnostics.  Here we PROVE the boolean parts coincide, so

@@ -2,7 +2,7 @@ import Submission.PhaseB
 set_option autoImplicit true
 
 /-!
-# The small-n unrolled verdicts (R2125607414)
+# The small-n unrolled verdicts
 
 For `n ≤ 3` the prologue jumps to `LSMALL` (pc 192) with the register
 file `[0] = 2n+2`, `[1] = 1`, `[2] = 0`, `[3] = 9` and the saved strip
